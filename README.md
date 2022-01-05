@@ -3,7 +3,7 @@
 
 import cv2
 
-image = cv2.imread('rickky.jpg')
+image = cv2.imread('rk.jpg')
 
 height, width = image.shape[:2]
 
@@ -16,10 +16,9 @@ rotated_image = cv2.warpAffine(src=image, M=rotate_matrix, dsize=(width, height)
 cv2.imshow('Original image', image)
 cv2.imshow('Rotated image', rotated_image)
 cv2.waitKey(0)
-cv2.imwrite('rickky.jpg', rotated_image)
+cv2.imwrite('rk.jpg', rotated_image)
 
 # OUTPUT:
-# Original image:
-![image](https://user-images.githubusercontent.com/95745568/148197479-7c09a78e-d762-4cdc-ab16-df64de02c0a1.png)
-# Rotated image:
-![image](https://user-images.githubusercontent.com/95745568/148197817-acdecb4b-b17c-411a-86fa-a7d885544d27.png)
+![image](https://user-images.githubusercontent.com/95745568/148203720-fbd0fa2d-de7a-4bd2-a7d6-9688d20897a5.png)
+
+![image](https://user-images.githubusercontent.com/95745568/148203773-82f8b8ac-6d14-4f2a-8843-365e760fe846.png)
